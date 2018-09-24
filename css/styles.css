@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background: url('../images/castle_background.png') 0 0 no-repeat;
+    background-position: center; 
+    width: 100%;
+    height: 3840px;
+}
+#sk8rboy{
+    background: url('../images/crazy_boy.png') 0 0 no-repeat;
+    width: 70px;
+    height: 80px;
+    position: fixed;
+    top: -700px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+    background-size: 216px 240px;
+    transition: top 1s ease; 
+}
+
+.animate {
+    animation: move 1s steps(3) infinite;
+}
+
+@keyframes move {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: -216px;
+    }
+}
+
+/* @keyframes jump {
+    from {
+        background-position-y: 0;
+    }
+    to {
+        background-position-y: -240px;
+    }
+} */
